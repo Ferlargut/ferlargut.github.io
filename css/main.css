@@ -1,0 +1,40 @@
+body{
+	background-color: black;
+	color: #ddd;
+}
+
+.navegacion
+{
+	list-style: none;
+	line-height: 42px;
+	padding-left: 0;	
+	margin: 2em auto; 
+	width: 15em;
+}
+.navegacion a
+{
+	color: #ddd;
+	text-decoration: none;
+	text-transform: uppercase;
+	--webkit-transition:all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+.navegacion li
+{
+	box-shadow: 3px 0 rgba(255,255,255,.2) inset;
+	margin-bottom: 5px;
+	padding-left: 1.5em;
+	--webkit-transition:all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+
+}
+.navegacion a:hover
+{
+	margin-left: 1em;
+}
+.navegacion li:hover
+{
+	box-shadow: 15em 0 rgba(255,255,255,.2) inset;
+}
