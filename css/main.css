@@ -1,40 +1,60 @@
-body{
-	background-color: black;
-	color: #ddd;
+header{
+	height: 70px;
+	width: 100%;
+	background-color: transparent;
+	-webkit-transition: background-color .5s;
 }
+nav{
+	display:none;
+	margin: auto;
+	margin-top: 1em;
+	height: 22em;
+	-webkit-transition: margin-left .5s;
 
-.navegacion
-{
+}
+ul{
+	display: block;
+	float: left;
 	list-style: none;
-	line-height: 42px;
-	padding-left: 0;	
-	margin: 2em auto; 
-	width: 15em;
 }
-.navegacion a
-{
-	color: #ddd;
+ul li{
+	float: left;
+	margin: .6em;
+	padding: .5em;
+	border: 1px solid #3c3c3c;
+	border-radius: 20%;
+}
+.titulos-menu{
+	color: #3c3c3c;
 	text-decoration: none;
-	text-transform: uppercase;
-	--webkit-transition:all .4s;
-	-o-transition: all .4s;
-	transition: all .4s;
 }
-.navegacion li
-{
-	box-shadow: 3px 0 rgba(255,255,255,.2) inset;
-	margin-bottom: 5px;
-	padding-left: 1.5em;
-	--webkit-transition:all .4s;
-	-o-transition: all .4s;
-	transition: all .4s;
+img #logo{
+	float: left;
+	display: block;
+	margin-left: 4em;
+	margin-right: 4em;	
+	border-radius: 40%;
+	-webkit-transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
+}
+#banner{
+    width: 100%;
+    background-image: url("/assets/img/sea2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+}
 
+#body{
+	width: 100%;
+	height: 500px;
 }
-.navegacion a:hover
-{
-	margin-left: 1em;
-}
-.navegacion li:hover
-{
-	box-shadow: 15em 0 rgba(255,255,255,.2) inset;
-}
+/*div.perfil {   
+	background-image: url(/assets/img/fer.jpg); 
+    height: 100px;
+    width: 100px;    
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}*/
+
