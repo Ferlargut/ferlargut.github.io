@@ -7,7 +7,7 @@ $(document).ready(function(){
     var isShowing = false;
 
     if ($(this).hasClass("show")) {
-      isShowing = true;
+      isShowing = true
     }
 
     if ($("div.cards").hasClass("showing")) {
