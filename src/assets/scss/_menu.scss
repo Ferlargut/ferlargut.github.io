@@ -1,0 +1,26 @@
+.navegador-claro {
+    background-color: #393e46;
+    width: 7em;
+    margin: 12px;
+    border: 0.3rem solid #393e46;
+    border-radius: .5rem;
+}
+
+.nave-claro {
+    justify-content: space-around;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .logo-claro {
+    height: 10rem;
+}
+    .img-logo-claro {
+        width: 8rem;
+    }
+    .btn-nav-claro {
+        width: 10em;
+        height: 6rem;
+        margin: 0rem;
+    }
+}

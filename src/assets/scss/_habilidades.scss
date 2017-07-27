@@ -1,0 +1,102 @@
+.habilidades{
+    background-color: #eeeeee;
+    h2{
+    font-family: 'Playball', cursive;
+    color: #393e46;
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+    padding: 1em;
+    }
+
+}
+
+.contenedor-habilidades{
+    height: 26rem;
+    justify-content: space-around;    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pregreso-circular{
+    &,
+    &::before,
+    &::after{
+    width: 22rem;
+    height: 22rem;   
+    margin: inherit; 
+    border-radius: 50%;
+    }
+    margin: auto;    
+    position: relative;    
+    &::before,
+    &::after{
+        position: absolute;
+        top: 0;
+        left: 0;    
+        text-align: center;
+    }
+    &::before{
+        padding: .5em;
+        box-sizing: border-box;
+        font-size: 3rem;
+        line-height: 12rem;        
+    }
+    &:after {       
+        position: absolute;     
+        line-height: 20rem;
+    }
+}
+@function progress($porcent){
+    $deg: $porcent /100*180;
+    @return #{$deg}deg;
+}
+@mixin progreso-circular($porcent, $skill,$color,$bgcolor){    
+    $progreso:progress($porcent);
+    transform: rotate($progreso);
+    background: linear-gradient(
+        0deg,
+        $color 50%,
+        rgba($color, .3)50%
+    );
+    &::before,
+    &::after{
+        color:$color;        
+    }
+    &::before{
+        content: "#{$skill}";
+        background: $bgcolor content-box;
+        transform: rotate(-#{$progreso});
+        text-transform: uppercase;
+    }
+    &::after{
+         content: "#{$porcent}%";
+         background: linear-gradient(
+            transparent 50%,
+            $bgcolor 50%
+        );
+        transform: scale(1.1) rotate(-#{$progreso}); 
+    }
+}
+.html{
+    @include progreso-circular(70,html,#00adb5,#eeeeee)
+}
+.css{
+    @include progreso-circular(60,css,#00adb5,#eeeeee)
+}
+.js{
+    @include progreso-circular(75,js,#00adb5,#eeeeee)
+}
+.jquery{
+    @include progreso-circular(60,jquery,#00adb5,#eeeeee)
+}
+.scss{
+    @include progreso-circular(50,scss,#00adb5,#eeeeee)
+}
+.react{
+    @include progreso-circular(10,react,#00adb5,#eeeeee)
+}
+.node{
+    @include progreso-circular(30,node,#00adb5,#eeeeee)
+}
+
