@@ -79,24 +79,24 @@
     }
 }
 .html{
-    @include progreso-circular(70,html,orange,#eeeeee)
+    @include progreso-circular(70,html,#00adb5,#eeeeee)
 }
 .css{
-    @include progreso-circular(60,css,green,#eeeeee)
+    @include progreso-circular(60,css,#00adb5,#eeeeee)
 }
 .js{
-    @include progreso-circular(75,js,blue,#eeeeee)
+    @include progreso-circular(75,js,#00adb5,#eeeeee)
 }
 .jquery{
-    @include progreso-circular(60,jquery,red,#eeeeee)
+    @include progreso-circular(60,jquery,#00adb5,#eeeeee)
 }
 .scss{
-    @include progreso-circular(50,scss,purple,#eeeeee)
+    @include progreso-circular(50,scss,#00adb5,#eeeeee)
 }
 .react{
-    @include progreso-circular(10,react,yellow,#eeeeee)
+    @include progreso-circular(10,react,#00adb5,#eeeeee)
 }
 .node{
-    @include progreso-circular(30,node,black,#eeeeee)
+    @include progreso-circular(30,node,#00adb5,#eeeeee)
 }
 
