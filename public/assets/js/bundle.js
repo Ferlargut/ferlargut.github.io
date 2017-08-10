@@ -4,9 +4,9 @@ $(document).ready(function(){
   
   $("div.card").click(function(e){
     e.preventDefault();
-
+    
     var isShowing = false;
-
+    console.log(this);
     if ($(this).hasClass("show")) {
       isShowing = true;
     }
